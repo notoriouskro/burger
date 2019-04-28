@@ -7,19 +7,19 @@ var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
     burger.all(function(data) {
-      var hbsObject = {
-        cats: data
+      var burgerObject = {
+        burgers: data
       };
-      console.log(hbsObject);
-      res.render("index", hbsObject);
+      console.log(burgerObject);
+      res.render("index", burgerObject);
     });
   });
   
   router.post("/api/burgers", function(req, res) {
     burger.create([
-      "name", "sleepy"
+      "burgerName", "devoured"
     ], [
-      req.body.name, req.body.sleepy
+      req.body.burgerName, req.body.devoured
     ], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
@@ -32,7 +32,7 @@ router.get("/", function(req, res) {
     console.log("condition", condition);
   
     burger.update({
-      sleepy: req.body.sleepy
+      devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {
         // If no rows were changed, then the ID must not exist, so 404
