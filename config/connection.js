@@ -2,14 +2,14 @@ var mysql = require("mysql");
 
 var connection;
   
-if(process.env.lyl3nln24eqcxxot.cbetxkdyhwsb.us-east-1.rds.amazonaws.com){
-  connection = mysql.createConnection(process.env.lyl3nln24eqcxxot.cbetxkdyhwsb.us-east-1.rds.amazonaws.com);
+if(process.env.u28rhuskh0x5paau.cbetxkdyhwsb.us-east-1.rds.amazonaws.com){
+  connection = mysql.createConnection(process.env.u28rhuskh0x5paau.cbetxkdyhwsb.us-east-1.rds.amazonaws.com);
 }else {
   mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "Steinh0fer",
+  password: "",
   database: "burgers_db"
   });
 };
