@@ -79,15 +79,11 @@ var orm = {
           cb(result);
         });
       },
-      deleteOne: function(table, objColVals, condition, cb) {
-        var queryString = "DELETE " + table;
-    
-        queryString += " SET ";
-        queryString += objToSql(objColVals);
+      deleteOne: function(table, condition, cb) {
+        var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
         queryString += condition;
     
-        console.log(queryString);
         connection.query(queryString, function(err, result) {
           if (err) {
             throw err;

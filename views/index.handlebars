@@ -1,22 +1,25 @@
-
-<h1>Burgers!</h1>
-<h2>Add a Burger</h2>
+<div class="container">
+<div class="logoDiv">  
+<img class="burgerLogo" src="../assets/images/burgerLogo.png" />
+</div>
+<h1 style="color: white">Burger World</h1>
+<h3 style="color: white">Add a Burger:</h3>
 <form class="create-burger">
 
   <div class="form-group">
-    <label for="burger">Type of Burger:</label>
+    <label for="burger" >Type of Burger:</label>
     <input type="text" id="burger" name="name">
     <button type="submit" class="submit-burger">Add Burgers</button>
   </div>
 </form>
 
 
-<h2>Types of Burgers!</h2>
-
+<h2 style="color: white">Types of Burgers:</h2>
+<hr />
+<div class="burgerWrapper">
     <div class="row">
       <div class="col-6 col-md-4">
-        <h2>Burgers to be devoured!</h2>
-        <hr />
+        <h3 style="color: white">Burgers to be devoured!</h3>
         <ul>
           {{#each burgers}}
           {{#unless devoured}}
@@ -25,10 +28,9 @@
           {{/each}}
         </ul>
       </div>
-      <div class="col-6 col-md-4"></div>
+      <div class="col-2 col-md-1"></div>
       <div class="col-6 col-md-4">
-        <h2>Burgers that have been devoured!</h2>
-        <hr />
+        <h3 style="color: white">Devoured burgers!</h3>
         <ul>
           {{#each burgers}}
           {{#if devoured}}
@@ -38,7 +40,8 @@
         </ul>
       </div>
     </div>
-
+    </div>
+</div>
 
     
 

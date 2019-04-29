@@ -1,0 +1,58 @@
+.container{
+    background: #cc5500; 
+}
+
+.burgerWrapper{
+    text-align: center;
+    margin: auto;
+}
+
+.logoDiv{
+    text-align: center;
+}
+.create-burger {
+    background: #D3D3D3;
+    padding: 15px;
+    border: black 2px solid;
+}
+.col-6 {
+    background: #cc5500;
+}
+h1{
+    color: #D3D3D3;
+    background-color: #cc5500;
+    text-align: center;
+}
+
+h2{
+    color: navy;
+    background-color: #cc5500;
+    /* text-align: center; */
+    padding-top: 10px;
+}
+
+h3{
+    background-color: #cc5500;
+    padding: 5px;
+}
+
+.burgerLogo{
+    height: 350px;
+    width: auto;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #D3D3D3;
+    border: grey 3px dashed;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
